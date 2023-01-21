@@ -51,6 +51,14 @@
                     </Style>
                 </Button.Resources>
             </Button>
+            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Logout" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_Logout" Height="41" FontSize="18" FontWeight="Bold">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            
         </StackPanel>
 
         <Frame x:Name="Main" Margin="220,50,0,0" NavigationUIVisibility="Hidden" />

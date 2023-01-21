@@ -24,7 +24,7 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        <TextBlock Text="Data Barang"
+        <TextBlock Text="Data Transaksi"
                    Grid.Row="0"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"

@@ -65,5 +65,13 @@ namespace ZeroStore
             viewModel1 = new TransaksiViewModel();
             this.DataContext = viewModel1;
         }
+
+        private void Button_Click_Logout(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Anda Yakin Ingin Logout?");
+            var mv = new MainWindow();
+            mv.Show();
+            this.Close();
+        }
     }
 }
