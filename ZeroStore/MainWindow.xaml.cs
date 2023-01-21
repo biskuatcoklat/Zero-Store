@@ -22,10 +22,14 @@ namespace ZeroStore
     public partial class MainWindow : Window
     {
         BarangViewModel viewModel;
+        TransaksiViewModel viewModel1;
+        KonsumenViewModel viewModel2;
         public MainWindow()
         {
             InitializeComponent();
             viewModel = new BarangViewModel();
+            viewModel1 = new TransaksiViewModel();
+            viewModel2 = new KonsumenViewModel();
             this.DataContext = viewModel;
         }
 
@@ -51,15 +55,15 @@ namespace ZeroStore
         private void Button_Click_Konsumen(object sender, RoutedEventArgs e)
         {
             Main.Content = new Views.Konsumen();
-            viewModel = new BarangViewModel();
-            this.DataContext = viewModel;
+            viewModel2 = new KonsumenViewModel();
+            this.DataContext = viewModel1;
         }
 
         private void Button_Click_Transaksi(object sender, RoutedEventArgs e)
         {
             Main.Content = new Views.Transaksi();
-            viewModel = new BarangViewModel();
-            this.DataContext = viewModel;
+            viewModel1 = new TransaksiViewModel();
+            this.DataContext = viewModel1;
         }
     }
 }

@@ -43,5 +43,26 @@ namespace ZeroStore.Models
             get { return Tanggal; }
             set { Tanggal = value;OnPropertyChanged("tanggal"); }
         }
+
+        private string Keterangan;
+        public string keterangan
+        {
+            get { return Keterangan; }
+            set { Keterangan = value; OnPropertyChanged("keterangan"); }
+        }
+
+        private string nama_konsumen;
+        public string Nama_konsumen
+        {
+            get { return nama_konsumen; }
+            set { nama_konsumen = value; OnPropertyChanged("Nama_konsumen"); }
+        }
+
+        private string alamat_konsumen;
+        public string Alamat_konsumen
+        {
+            get { return alamat_konsumen; }
+            set { alamat_konsumen = value; OnPropertyChanged("Alamat_konsumen"); }
+        }
     }
 }

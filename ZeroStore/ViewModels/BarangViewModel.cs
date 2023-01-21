@@ -10,7 +10,7 @@ using System.Collections.ObjectModel;
 
 namespace ZeroStore.ViewModels
 {
-    class BarangViewModel : INotifyPropertyChanged
+    public class BarangViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
