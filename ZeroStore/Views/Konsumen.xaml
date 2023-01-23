@@ -115,29 +115,6 @@
                     Padding="3" Command="{Binding Path=DeleteCommand}" Width="165"/>
         </StackPanel>
         
-
-        <!--<StackPanel Orientation="Horizontal"
-                    Grid.Row="8"
-                    Grid.Column="1" Margin="5,8">
-            <Button Name="btnAdd"
-                    Content="Add" 
-                    Margin="5,8" 
-                    Padding="3" Command="{Binding Path=SaveCommand}"/>
-            <Button Name="btnSearch"
-                    Content="Search" 
-                    Margin="5,8" 
-                    Padding="3" Command="{Binding Path=SearchCommand}"/>
-            <Button Name="btnUpdate"
-                    Content="Update" 
-                    Margin="5,8"
-                    Padding="3" Command="{Binding Path=UpdateCommand}"/>
-            <Button Name="btnDelete"
-                    Content="Delete" 
-                    Margin="5,8"
-                    Padding="3" Command="{Binding Path=DeleteCommand}"/>
-        </StackPanel>-->
-
-
         <DataGrid Name="dgKonsumen"
                   AutoGenerateColumns="False"
                   Grid.Row="10" Margin="23,100,95,-140"

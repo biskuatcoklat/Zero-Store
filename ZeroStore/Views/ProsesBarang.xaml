@@ -29,12 +29,12 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        <TextBlock Text=" Inventory Barang "
+        <TextBlock Text=" Proses Data Barang "
                    Grid.Row="0"
                    FontSize="20"
                    FontWeight="Bold"
-                   HorizontalAlignment="Center" Margin="126,10,310,6" 
-                   Width="170" Grid.Column="1" Grid.ColumnSpan="2"/>
+                   HorizontalAlignment="Center" Margin="126,10,290,6" 
+                   Width="190" Grid.Column="1" Grid.ColumnSpan="2"/>
 
         <TextBlock Text="Masukkan Id"
                    Grid.Row="1"
@@ -114,44 +114,22 @@
                     HorizontalAlignment="Center" 
                     Padding="3" Command="{Binding Path=DeleteCommand}" Width="165"/>
         </StackPanel>
-
-        <!--<StackPanel Orientation="Horizontal"
-                    Grid.Row="8"
-                    Grid.Column="1" Margin="5,8">
-            <Button Name="btnAdd"
-                    Content="Add" 
-                    Margin="5,8" 
-                    Padding="3" Command="{Binding Path=SaveCommand}"/>
-            <Button Name="btnSearch"
-                    Content="Search" 
-                    Margin="5,8" 
-                    Padding="3" Command="{Binding Path=SearchCommand}"/>
-            <Button Name="btnUpdate"
-                    Content="Update" 
-                    Margin="5,8"
-                    Padding="3" Command="{Binding Path=UpdateCommand}"/>
-            <Button Name="btnDelete"
-                    Content="Delete" 
-                    Margin="5,8"
-                    Padding="3" Command="{Binding Path=DeleteCommand}"/>
-        </StackPanel>-->
-
-
-        <!--<DataGrid Name="dgProduk"
+        <DataGrid Name="dgBarang"
                   AutoGenerateColumns="False"
                   Grid.Row="10" Margin="23,100,95,-140"
-                  Padding="3" ItemsSource="{Binding Path=ProdukList,Mode=TwoWay}" Grid.ColumnSpan="2" >
+                  HorizontalAlignment="Center"
+                  Padding="3" ItemsSource="{Binding Path=BarangList1,Mode=TwoWay}" Grid.ColumnSpan="2" >
             <DataGrid.Columns>
                 <DataGridTextColumn 
-                    Header="Produk Id" Width="auto"
+                    Header="Barang Id" Width="100"
                     Binding="{Binding Path=Id}"/>
                 <DataGridTextColumn 
-                    Header="Nama Barang" Width="auto"
+                    Header="Nama Barang" Width="100"
                     Binding="{Binding Path=Namebarang}"/>
                 <DataGridTextColumn 
-                    Header="Status Barang" Width="auto"
+                    Header="Status Barang" Width="100"
                     Binding="{Binding Path=Statusbarang}"/>
             </DataGrid.Columns>
-        </DataGrid>-->
+        </DataGrid>
     </Grid>
 </Page>

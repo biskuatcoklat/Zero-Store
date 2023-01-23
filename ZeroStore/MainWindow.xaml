@@ -16,42 +16,50 @@
         </StackPanel>
         <TextBlock Text="          Welcome Admin" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" />
         <StackPanel Orientation="Vertical" Width="220" HorizontalAlignment="Left" Margin="0,50,0,0" Background="#DFD3C3">
-            <Button  Background="#D8CBAC" BorderBrush="Transparent" Content="Home" MinWidth="50" Margin="10,10,10,0" Click="Button_Click_Home" Height="41" FontSize="18" FontWeight="Bold" >
+            <Button  Background="#D8CBAC" BorderBrush="Transparent" Content="Home" MinWidth="50" Margin="10,10,10,0" Click="Button_Click_Home" 
+                     Height="41" FontSize="18" FontWeight="Bold" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Proses Barang" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_ProsesData" Height="41" FontSize="18" FontWeight="Bold">
+            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Proses Barang" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_ProsesData" 
+                    Height="41" FontSize="18" FontWeight="Bold">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Data Barang" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_DataBarang" Height="41" FontSize="18" FontWeight="Bold">
+            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Data Barang" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_DataBarang" 
+                    Height="41" FontSize="18" FontWeight="Bold">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Konsumen" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_Konsumen" Height="41" FontSize="18" FontWeight="Bold">
+            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Konsumen" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_Konsumen" 
+                    Height="41" 
+                    FontSize="18" FontWeight="Bold">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Transaksi" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_Transaksi" Height="41" FontSize="18" FontWeight="Bold">
+            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Transaksi" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_Transaksi" 
+                    Height="41" 
+                    FontSize="18" FontWeight="Bold">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Logout" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_Logout" Height="41" FontSize="18" FontWeight="Bold">
+            <Button Background="#D8CBAC" BorderBrush="Transparent"  Content="Logout" MinWidth="50" Margin="10,30,10,0" Click="Button_Click_Logout" 
+                    Height="41" FontSize="18" FontWeight="Bold">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>

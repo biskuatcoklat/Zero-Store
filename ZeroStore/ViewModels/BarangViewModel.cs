@@ -20,10 +20,13 @@ namespace ZeroStore.ViewModels
         }
 
         BarangService ObjBarangService;
+        BarangService ObjBarangService1;
         public BarangViewModel()
         {
             ObjBarangService = new BarangService();
+            ObjBarangService1 = new BarangService();
             LoadData();
+            LoadData1();
             CurrentBarang = new Barang();
             saveCommand = new RelayCommand(Save);
             searchCommand = new RelayCommand(Search);
@@ -39,9 +42,22 @@ namespace ZeroStore.ViewModels
             set { barangList = value; OnPropertyChanged("BarangList"); }
         }
 
+        private ObservableCollection<Barang> barangList1;
+
+        public ObservableCollection<Barang> BarangList1
+        {
+            get { return barangList1; }
+            set { barangList1 = value; OnPropertyChanged("BarangList1"); }
+        }
+
         private void LoadData()
         {
             BarangList = new ObservableCollection<Barang>(ObjBarangService.GetAll());
+        }
+
+        private void LoadData1()
+        {
+            BarangList1 = new ObservableCollection<Barang>(ObjBarangService1.GetAlldata());
         }
 
         private Barang currentBarang;

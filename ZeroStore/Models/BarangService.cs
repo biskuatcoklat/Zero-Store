@@ -58,6 +58,40 @@ namespace ZeroStore.Models
             return ObjBarangList;
         }
 
+        public List<Barang> GetAlldata()
+        {
+            List<Barang> ObjBarangList1 = new List<Barang>();
+            try
+            {
+                ObjSqlCommand.Parameters.Clear();
+                ObjSqlCommand.CommandText = "SelectAllBarangdata";
+                ObjSqlConnection.Open();
+                var ObjSqlDataReader = ObjSqlCommand.ExecuteReader();
+                if (ObjSqlDataReader.HasRows)
+                {
+                    Barang ObjBarang1 = null;
+                    while (ObjSqlDataReader.Read())
+                    {
+                        ObjBarang1 = new Barang();
+                        ObjBarang1.Id = ObjSqlDataReader.GetInt32(0);
+                        ObjBarang1.Namebarang = ObjSqlDataReader.GetString(1);
+                        ObjBarang1.Statusbarang = ObjSqlDataReader.GetString(2);
+
+                        ObjBarangList1.Add(ObjBarang1);
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                ObjSqlConnection.Close();
+            }
+            return ObjBarangList1;
+        }
+
         public bool Tambah(Barang ObjNewBarang)
         {
             bool IsAdded = false;
