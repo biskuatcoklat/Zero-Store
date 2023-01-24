@@ -31,7 +31,19 @@
                    FontSize="20"
                    FontWeight="Bold"
                    HorizontalAlignment="Center" Margin="5,8"/>
-        <DataGrid Name="dgProduk"
+        <Button Content="Export Data"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Padding="7"
+                Margin="10,1,10,10" Click="Button_Click" Background="#D8CBAC" MinWidth="50" Height="30" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <DataGrid Name="dgTransaksi"
                   AutoGenerateColumns="False"
                   Grid.Row="6"
                   HorizontalAlignment="Center"
